@@ -3,11 +3,16 @@ body {
     background-size: cover;
 }
 
+#mainNav {
+    text-align: center;
+}
+
 #menuList {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: inline-block;
 }
 
 #menuList li {
@@ -17,14 +22,31 @@ body {
 header nav ul li a {
     color: rgb(138, 3, 3);
     display: block;
-    padding: 5px 20px;
     width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
     text-decoration: none; 
     background-color: rgb(255, 112, 52);
     border-color: rgb(138, 3, 3);
     border-style: solid;
+    text-align: left;
+    font-size: 1.1em;
 }
  
  header nav ul li a:hover {
     color: whitesmoke;
+ }
+
+ #mainTitle {
+    font-family: 'Creepster', cursive;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 112, 52);
+    font-size: 3em;
+    letter-spacing: 10px;
+ }
+
+ #myStuff {
+     text-align: right;
+     color: rgb(138, 3, 3);
  }
