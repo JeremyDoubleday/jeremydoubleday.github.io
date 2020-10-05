@@ -138,3 +138,12 @@ tr.perkRow {
     text-shadow: rgb(255, 112, 52) 0 5px;
     padding: 0;
  }
+
+ p {
+     color: rgb(255, 112, 52);
+ }
+
+ .portraits {
+     border-style: solid;
+     border-color: rgb(0, 255, 0);
+ }

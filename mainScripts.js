@@ -7,17 +7,17 @@ var survPics = new Map();
 var killPics = new Map();
 
 function init() {
-    survString = createSurvTable();
-    killString = createKillTable();
 }
 
 function runSPerks() {
+    survString = createSurvTable();
     document.getElementById("mainBody").innerHTML = survString;
     document.getElementById("mainBody").style.height = "1950px";
     document.getElementById("mainBody").style.width = "1200px";
 }
 
 function runKPerks() {
+    killString = createKillTable();
     document.getElementById("mainBody").innerHTML = killString;
     document.getElementById("mainBody").style.height = "1750px";
     document.getElementById("mainBody").style.width = "1200px";
@@ -38,7 +38,7 @@ function createSurvTable() {
             var temp = allSurvs[i].perks[j];
             var perkImage = findPerkLink(temp);
             htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
-            survPics.set(allSurvs[i].name, perkImage);
+            survPics.set(temp, perkImage);
         }
         htmlString += "</table></td>";
     }
@@ -62,7 +62,7 @@ function createKillTable() {
             var temp = allKills[i].perks[j];
             var perkImage = findPerkLink(temp);
             htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
-            killPics.set(allKills[i].name, perkImage);
+            killPics.set(temp, perkImage);
         }
         htmlString += "</table></td>";
     }
