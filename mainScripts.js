@@ -1,10 +1,12 @@
 "use strict";
 
 window.onload = init;
+var jasonSurvs = null;
+
 
 function init() {
     loadSurvs(function(response) {
-        var jasonSurvs = JSON.parse(response);
+        jasonSurvs = JSON.parse(response);
     });
     console.log(jasonSurvs);
 }
