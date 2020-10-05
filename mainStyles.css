@@ -80,3 +80,24 @@ header nav ul li a {
  #mainBody dl dd {
      color: rgb(101, 123, 80);
  }
+
+ #leftNav {
+     width: 250px;
+ }
+
+ #leftNav h3 {
+     color: whitesmoke;
+     float: left;
+     text-align: center;
+     padding-left: 60px;
+ }
+
+ #leftNav ul li a {
+     background-color: rgb(138, 3, 3);
+     color: whitesmoke;
+     display: block;
+     padding: 10px;
+     text-decoration: none;
+     float: left;
+     margin: auto;
+ }
