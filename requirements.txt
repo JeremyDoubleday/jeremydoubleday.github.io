@@ -31,13 +31,18 @@ Site any sources that you have used for information or images
 One of your pages will be a form with at least five input controls (at least three different types of controls).
 
 STEP 3 - Testing
-Test your page and make any corrections as needed. Check that your pages meet all the items in the Major Project Minimum Requirements.
+Test your page and make any corrections as needed. Check that your pages meet all the 
+items in the Major Project Minimum Requirements.
 
 STEP 4 - Publishing
-Use Filezilla to upload (publish) the entire major folder to your webserver. You should have published all six web pages, your stylesheet and any image files.
+Use Filezilla to upload (publish) the entire major folder to your webserver. 
+You should have published all six web pages, your stylesheet and any image files.
 
 STEP 5 - Testing your published page
-Now that your pages and images have all been published to your Web directory, you need to verify that everything is there and being referenced correctly. Make any corrections as needed to the files on your local storage and then publish them to your Web directory. Publish any missing files from your local storage to your Web directory.
+Now that your pages and images have all been published to your Web directory, 
+you need to verify that everything is there and being referenced correctly. Make any corrections as 
+needed to the files on your local storage and then publish them to your Web directory. 
+Publish any missing files from your local storage to your Web directory.
 
 STEP 6 - Submitting in Canvas:
 In Canvas, you must enter the accurate and complete URL for this lesson. The url will be similar to:
