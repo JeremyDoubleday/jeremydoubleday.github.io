@@ -44,6 +44,11 @@ header nav ul li a {
     color: rgb(255, 112, 52);
     font-size: 3em;
     letter-spacing: 10px;
+    text-shadow: rgb(138, 3, 3) 0 5px;
+ }
+
+ #mainTitle::first-letter {
+    font-size: 1.2em;
  }
 
  .myStuff {
