@@ -114,14 +114,27 @@ header nav ul li a {
 }
 
  .perkName {
-     color: rgb(255, 112, 52);
- }
+    color: rgb(255, 112, 52);
+    vertical-align: middle;
+    padding: 5px;
+}
 
  #perkImage {
      max-width: 40px;
      max-height: auto;
+     vertical-align: middle;
  }
 
 tr.perkRow {
      outline: solid 1px;
+ }
+
+ .tableHead {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    color: rgb(138, 3, 3);
+    font-size: 4em;
+    letter-spacing: 10px;
+    text-shadow: rgb(255, 112, 52) 0 5px;
+    padding: 0;
  }

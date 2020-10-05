@@ -13,18 +13,18 @@ function init() {
 
 function runSPerks() {
     document.getElementById("mainBody").innerHTML = survString;
-    document.getElementById("mainBody").style.height = "1700px";
-    document.getElementById("mainBody").style.width = "1100px";
+    document.getElementById("mainBody").style.height = "1950px";
+    document.getElementById("mainBody").style.width = "1200px";
 }
 
 function runKPerks() {
     document.getElementById("mainBody").innerHTML = killString;
-    document.getElementById("mainBody").style.height = "1500px";
-    document.getElementById("mainBody").style.width = "1100px";
+    document.getElementById("mainBody").style.height = "1750px";
+    document.getElementById("mainBody").style.width = "1200px";
 }
 
 function createSurvTable() {
-    var htmlString = "<table id='survTable'>";
+    var htmlString = "<h3 class='tableHead'>Survivors</h3><table id='survTable'>";
     for (var i = 0; i < allSurvs.length; i++) {
         if (i % 3 === 0) {
             if (i > 0) {
@@ -48,7 +48,7 @@ function createSurvTable() {
 }
 
 function createKillTable() {
-    var htmlString = "<table id='killTable'>";
+    var htmlString = "<h3 class='tableHead'>Killers</h3><table id='killTable'>";
     for (var i = 0; i < allKills.length; i++) {
         if (i % 3 === 0) {
             if (i > 0) {
