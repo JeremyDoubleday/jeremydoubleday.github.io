@@ -21,8 +21,11 @@ function runSRand() {
             }
             htmlString += "<tr>";
         }
-        htmlString += "<td><input class='portraits' onclick='portraitClicked(this.id);' id='" + temp.name_tag + 
-        "' type='image' src='" + temp.icon.preview_portrait + "' /></td>";
+        htmlString += "<td><input class='portraits' id='" + temp.name_tag + "' type='image' src='" 
+            + temp.icon.preview_portrait + "' onclick='portraitClicked(this.id)'  /></td>";
+        if (i === allSurvs.length - 1) {
+            htmlString += "</tr>";
+        }
     }
     
     htmlString += "</table>";
@@ -49,9 +52,16 @@ function getPerks() {
 }
 
 function portraitClicked(id) {
+    if (document.getElementById(id) === null) {
+        return;
+    }
     if (document.getElementById(id).style.borderColor === "rgb(0, 255, 0)") {
         document.getElementById(id).style.borderColor = "rgb(255, 0, 0)";
+        selectedSurvs.delete(id);
+        console.log("removed" + selectedSurvs.get(id));
     } else {
         document.getElementById(id).style.borderColor = "rgb(0, 255, 0)";
+        selectedSurvs.set(id, selectedSurvs.get(id));
+        console.log("added" + selectedSurvs.get(id));
     }
 }
