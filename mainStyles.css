@@ -82,7 +82,7 @@ header nav ul li a {
  }
 
  #leftNav {
-     width: 250px;
+     width: 200px;
  }
 
  #leftNav h3 {
@@ -93,7 +93,7 @@ header nav ul li a {
  }
 
  #leftNav ul li a {
-     background-color: rgb(138, 3, 3);
+     background-color: black;
      color: whitesmoke;
      display: block;
      padding: 10px;
