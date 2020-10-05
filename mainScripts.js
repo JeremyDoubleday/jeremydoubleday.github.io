@@ -1,18 +1,20 @@
 "use strict";
 
 window.onload = init;
-
+var survString;
+var killString;
 
 function init() {
-    
+    survString = createSurvTable();
+    killString = createKillTable();
 }
 
 function runSPerks() {
-    document.getElementById("mainBody").innerHTML = createSurvTable();
+    document.getElementById("mainBody").innerHTML = survString;
 }
 
 function runKPerks() {
-    console.log(allKills);
+    document.getElementById("mainBody").innerHTML = killString;
 }
 
 function createSurvTable() {
@@ -29,14 +31,39 @@ function createSurvTable() {
         for (var j = 0; j < 3; j++) {
             var temp = allSurvs[i].perks[j];
             var perkImage = findPerkLink(temp);
-            htmlString += "<tr><td><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
+            htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
         }
-        htmlString += "</table>";
+        htmlString += "</table></td>";
     }
     
-    htmlString += "</table></td>";
+    htmlString += "</table>";
     document.getElementById("mainBody").style.height = "1750px";
-    document.getElementById("mainBody").style.width = "1050px";
+    document.getElementById("mainBody").style.width = "1100px";
+    return htmlString;
+}
+
+function createKillTable() {
+    var htmlString = "<table id='killTable'>";
+    for (var i = 0; i < allKills.length; i++) {
+        if (i % 3 === 0) {
+            if (i > 0) {
+                htmlString += "</tr>";
+            }
+            htmlString += "<tr>";
+        }
+        htmlString += "<td><img src='" + allKills[i].icon.preview_portrait + "' /></td><td>"
+        htmlString += "<table class='perkTable'>";
+        for (var j = 0; j < 3; j++) {
+            var temp = allKills[i].perks[j];
+            var perkImage = findPerkLink(temp);
+            htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
+        }
+        htmlString += "</table></td>";
+    }
+    
+    htmlString += "</table>";
+    document.getElementById("mainBody").style.height = "1500px";
+    document.getElementById("mainBody").style.width = "1100px";
     return htmlString;
 }
 

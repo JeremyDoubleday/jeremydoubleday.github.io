@@ -106,10 +106,18 @@ header nav ul li a {
  }
 
  #survTable {
+    color: rgb(138, 3, 3);
+}
+
+ .perkName {
      color: rgb(255, 112, 52);
  }
 
  #perkImage {
      max-width: 40px;
      max-height: auto;
+ }
+
+tr.perkRow {
+     outline: solid 1px;
  }
