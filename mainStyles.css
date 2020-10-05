@@ -46,7 +46,32 @@ header nav ul li a {
     letter-spacing: 10px;
  }
 
- #myStuff {
+ .myStuff {
      text-align: right;
      color: rgb(138, 3, 3);
+ }
+
+ #mainBody {
+     margin: auto;
+     background: rgb(0, 0, 0);
+     border: 2px solid rgb(138, 3, 3);
+     border-radius: 25px;
+     padding: 20px;
+     width: 700px;
+     height: 400px;
+ }
+
+ #mainBody h2 {
+    color: rgb(138, 3, 3);
+    font-style: oblique;
+    text-align: center;
+    text-decoration: underline;
+}
+
+ #mainBody dl dt {
+     color: rgb(255, 112, 52);
+ }
+
+ #mainBody dl dd {
+     color: rgb(101, 123, 80);
  }
