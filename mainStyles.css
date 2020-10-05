@@ -1,5 +1,35 @@
-html {
-    background-image: url("images/dbdBackground.jpg");
-    background-repeat: no-repeat;
-    opacity: .5;
+header {
+    background: url("images/dbdBackground.jpg") repeat center center fixed;
+    background-size: 105px;
 }
+
+body {
+    background: url("images/hallowedBlight.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#menuList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menuList li {
+    float: left;
+}
+
+header nav ul li a {
+    color: rgb(138, 3, 3);
+    display: block;
+    padding: 5px 20px;
+    width: 100%;
+    text-decoration: none; 
+    background-color: rgb(255, 112, 52);
+    border-color: rgb(138, 3, 3);
+    border-style: solid;
+}
+ 
+ header nav ul li a:hover {
+    color: whitesmoke;
+ }
