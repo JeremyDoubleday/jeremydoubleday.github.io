@@ -15,6 +15,9 @@
    <link href="mainStyles.css" rel="stylesheet" />
    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
    
+   <script src="allPerks.js" async></script>
+   <script src="allSurvs.js" async></script>
+   <script src="allKills.js" async></script>
    <script src="mainScripts.js" async></script>
 </head>
 
@@ -24,12 +27,12 @@
         <h1 id="mainTitle">Dead By Daylight Fan Page</h1>
         <p class="myStuff">Created by Jeremy Doubleday for IFT301</p>
         <ul id="menuList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">My Faves</a></li>
-            <li><a href="#">Survivor Perks</a></li>
-            <li><a href="#">Killer Perks</a></li>
-            <li><a href="#">Survivor Random Perk Picker</a></li>
-            <li><a href="#">Killer Random Perk Picker</a></li>
+            <li><a id="home" href="index.html">Home</a></li>
+            <li><a id="faves" href="#" onclick="runFaves()">My Faves</a></li>
+            <li><a id="sPerks" href="#" onclick="runSPerks()">Survivor Perks</a></li>
+            <li><a id="kPerks" href="#" onclick="runKPerks()">Killer Perks</a></li>
+            <li><a id="sRand" href="#">Survivor Random Perk Picker</a></li>
+            <li><a id="kRand" href="#">Killer Random Perk Picker</a></li>
         </ul>
       </nav>
 

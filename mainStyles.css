@@ -104,3 +104,12 @@ header nav ul li a {
      float: left;
      margin: auto;
  }
+
+ #survTable {
+     color: rgb(255, 112, 52);
+ }
+
+ #perkImage {
+     max-width: 40px;
+     max-height: auto;
+ }
