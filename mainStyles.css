@@ -141,9 +141,19 @@ tr.perkRow {
 
  p {
      color: rgb(255, 112, 52);
+     text-align: center;
+     font-size: 1.5em;
  }
 
  .portraits {
      border-style: solid;
      border-color: rgb(0, 255, 0);
  }
+
+ #randomSection {
+     display: inline-block;
+ }
+ 
+aside {
+    color: rgb(255, 112, 52);
+}

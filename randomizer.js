@@ -11,7 +11,16 @@ function init () {
 }
 
 function runSRand() {
-    var htmlString = "<h3 class='tableHead'>Survivors</h3><table id='randTable'>";
+    var htmlString = "<h3 class='tableHead'>Survivors</h3>";
+    
+    
+    /*finish setting up form here
+    
+    htmlString +="<form><input type=''";
+    */
+    
+    
+    htmlString += "<table id='randTable'>";
     htmlString += "<p>Click the portrait to deselect and remove that survivor's perks from the pool</p>";
     for (var i = 0; i < allSurvs.length; i++) {
         var temp = allSurvs[i];
@@ -21,17 +30,19 @@ function runSRand() {
             }
             htmlString += "<tr>";
         }
-        htmlString += "<td><input class='portraits' id='" + temp.name_tag + "' type='image' src='" 
+        htmlString += "<td><input bordercolor='green' class='portraits' id='" + temp.name_tag + "' type='image' src='" 
             + temp.icon.preview_portrait + "' onclick='portraitClicked(this.id)'  /></td>";
         if (i === allSurvs.length - 1) {
             htmlString += "</tr>";
         }
     }
     
-    htmlString += "</table>";
+    htmlString += "</table></div><div class='flexContainer'";
+    htmlString += drawAside();
     document.getElementById("mainBody").innerHTML = htmlString;
     document.getElementById("mainBody").style.width = "1000px";
-    document.getElementById("mainBody").style.height = "1300px";
+    document.getElementById("mainBody").style.height = "1400px";
+    document.getElementById("inline").innerHTML = drawAside();
 }
 
 function runKRand() {
@@ -52,16 +63,24 @@ function getPerks() {
 }
 
 function portraitClicked(id) {
-    if (document.getElementById(id) === null) {
-        return;
-    }
     if (document.getElementById(id).style.borderColor === "rgb(0, 255, 0)") {
         document.getElementById(id).style.borderColor = "rgb(255, 0, 0)";
         selectedSurvs.delete(id);
         console.log("removed" + selectedSurvs.get(id));
-    } else {
+    } else if (document.getElementById(id).style.borderColor === "rgb(255, 0, 0)") {
         document.getElementById(id).style.borderColor = "rgb(0, 255, 0)";
         selectedSurvs.set(id, selectedSurvs.get(id));
         console.log("added" + selectedSurvs.get(id));
+    } else {
+        document.getElementById(id).style.borderColor = "rgb(255, 0, 0)";
+        selectedSurvs.delete(id);
+        console.log("removed" + selectedSurvs.get(id));
     }
+}
+
+function drawAside() {
+    var htmlString = "";
+    htmlString += "<aside>Herro</aside>";
+    
+    return htmlString;
 }
