@@ -16,7 +16,7 @@ function runSPerks() {
     survString = createSurvTable();
     document.getElementById("mainBody").innerHTML = survString;
     document.getElementById("mainBody").style.height = "1950px";
-    document.getElementById("mainBody").style.width = "1200px";
+    document.getElementById("mainBody").style.width = "1300px";
 }
 
 /*
@@ -26,7 +26,7 @@ function runKPerks() {
     killString = createKillTable();
     document.getElementById("mainBody").innerHTML = killString;
     document.getElementById("mainBody").style.height = "1750px";
-    document.getElementById("mainBody").style.width = "1200px";
+    document.getElementById("mainBody").style.width = "1300px";
 }
 
 /*
