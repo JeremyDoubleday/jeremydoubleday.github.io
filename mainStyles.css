@@ -120,9 +120,9 @@ header nav ul li a {
     padding: 5px;
 }
 
- #perkImage {
-     max-width: 40px;
-     max-height: auto;
+ .perkImage {
+     width: 40px;
+     height: auto;
      vertical-align: middle;
  }
 
@@ -201,4 +201,31 @@ input {
     width: 169px;
     height: auto;
     vertical-align: middle;
+}
+
+.faveImage {
+    float: left;
+}
+
+.faveText {
+    font-size: 1em;
+}
+
+.faveSpan {
+    color: rgb(138, 3, 3);
+    float: left;
+}
+
+.faveText > .perkImage {
+    float: left;
+}
+
+.faveHeading {
+    color: rgb(255, 112, 52);
+    text-align: center;
+    font-size: 1.5em;
+    font-style: oblique;
+    text-decoration: underline;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }

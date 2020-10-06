@@ -37,7 +37,7 @@ function createSurvTable() {
         for (var j = 0; j < 3; j++) {
             var temp = allSurvs[i].perks[j];
             var perkImage = findPerkLink(temp);
-            htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
+            htmlString += "<tr class='perkRow'><td class='perkName'><img class='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
         }
         htmlString += "</table></td>";
         survTags.push(allSurvs[i]);
@@ -61,7 +61,7 @@ function createKillTable() {
         for (var j = 0; j < 3; j++) {
             var temp = allKills[i].perks[j];
             var perkImage = findPerkLink(temp);
-            htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
+            htmlString += "<tr class='perkRow'><td class='perkName'><img class='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
         }
         htmlString += "</table></td>";
         killTags.push(allKills[i]);
