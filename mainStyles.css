@@ -196,3 +196,9 @@ input {
     width: 18px;
     height: 18px;
 }
+
+#asuImage {
+    width: 169px;
+    height: auto;
+    vertical-align: middle;
+}
