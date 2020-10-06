@@ -9,6 +9,9 @@ var killTags = new Array();
 function init() {
 }
 
+/*
+    This function runs the survivor table and sets up the main window to an appropriate size
+*/
 function runSPerks() {
     survString = createSurvTable();
     document.getElementById("mainBody").innerHTML = survString;
@@ -16,6 +19,9 @@ function runSPerks() {
     document.getElementById("mainBody").style.width = "1200px";
 }
 
+/*
+    This function runs the killer table and sets up the main window to an appropriate size
+*/
 function runKPerks() {
     killString = createKillTable();
     document.getElementById("mainBody").innerHTML = killString;
@@ -23,6 +29,9 @@ function runKPerks() {
     document.getElementById("mainBody").style.width = "1200px";
 }
 
+/*
+    This function sets up the table for the survivor perks and images
+*/
 function createSurvTable() {
     var htmlString = "<h3 class='tableHead'>Survivors</h3><table id='survTable'>";
     for (var i = 0; i < allSurvs.length; i++) {
@@ -47,6 +56,9 @@ function createSurvTable() {
     return htmlString;
 }
 
+/*
+    This function sets up the table for the killer perks and images
+*/
 function createKillTable() {
     var htmlString = "<h3 class='tableHead'>Killers</h3><table id='killTable'>";
     for (var i = 0; i < allKills.length; i++) {
@@ -71,6 +83,9 @@ function createKillTable() {
     return htmlString;
 }
 
+/*
+    This function finds the link to a perk so the image can be used must pass perk_tag
+*/
 function findPerkLink(temp) {
     for (var i = 0; i < allPerks.length; i++) {
         if (allPerks[i].perk_tag === temp) {

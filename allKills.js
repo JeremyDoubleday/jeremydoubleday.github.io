@@ -1,3 +1,7 @@
+/*
+    This is a JSON file being used to hold all killer perks in an object.
+*/
+
 var allKills = [
     {
         "_id": "5f47fdbad80cf12dc4ac06c4",

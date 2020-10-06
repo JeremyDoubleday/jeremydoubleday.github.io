@@ -8,7 +8,9 @@ var deathPerks = new Array();
 function init() {
     getFavePerks();
 }
-
+/*
+    This function reads from all the perks and grabs all perks not assigned to a killer or survivor
+*/
 function getFavePerks() {
     for (var i = 0; i < allPerks.length; i++) {
         var temp = allPerks[i];
@@ -20,9 +22,12 @@ function getFavePerks() {
     }
 }
 
+/*
+    This function sets up the page with all the information for my favorite survivor and killer
+*/
+
 function runFaves() {
     
-
     var htmlString = "<h2>My favorite Survivor: " + nea.name + "</h2>";
     htmlString += "<img src='" + nea.icon.portrait + "' class='faveImage' />";
     htmlString += "<p class='faveText'><span class='faveSpan'>Overview:</span> " + nea.overview + "</p>";
@@ -59,6 +64,10 @@ function runFaves() {
     document.getElementById("mainBody").style.height = "1900px";
     document.getElementById("mainBody").style.width = "1200px";
 }
+
+/*
+    JSON objects to hold the info for deathslinger and nea
+*/
 
 var deathslinger = {
     "_id": "5f47fdbad80cf12dc4ac06d3",

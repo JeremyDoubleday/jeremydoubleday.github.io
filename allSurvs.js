@@ -1,3 +1,7 @@
+/*
+    This is a JSON file that is being stored to hold all Survivor perks
+*/
+
 var allSurvs = [
     {
         "_id": "5f47fd6ed80cf12dc4ac06b2",

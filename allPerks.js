@@ -1,3 +1,7 @@
+/*
+    This is a JSON file being used to store as an object to hold all perks
+*/
+
 var allPerks = [
     {
         "_id": "5f46d9afa3777022ec626079",
