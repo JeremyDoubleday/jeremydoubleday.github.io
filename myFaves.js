@@ -27,7 +27,7 @@ function getFavePerks() {
 */
 
 function runFaves() {
-    
+    getFavePerks();
     var htmlString = "<h2>My favorite Survivor: " + nea.name + "</h2>";
     htmlString += "<img src='" + nea.icon.portrait + "' class='faveImage' />";
     htmlString += "<p class='faveText'><span class='faveSpan'>Overview:</span> " + nea.overview + "</p>";
