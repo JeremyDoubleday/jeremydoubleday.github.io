@@ -55,6 +55,7 @@ header nav ul li a {
      text-align: right;
      color: rgb(138, 3, 3);
      font-size: 1.5em;
+     background-color: rgb(0, 0, 0);
  }
 
  #mainBody {
@@ -234,4 +235,10 @@ input {
     text-decoration: underline;
     padding-top: 50px;
     padding-bottom: 25px;
+}
+
+.randomPerk {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
 }

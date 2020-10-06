@@ -13,6 +13,9 @@ function init () {
     getPerks();
 }
 
+/*
+    This function sets up the common perks for killer and survivor
+*/
 function getPerks() {
     for (var i = 0; i < allPerks.length; i++) {
         var temp = allPerks[i];
@@ -26,6 +29,9 @@ function getPerks() {
     }
 }
 
+/*
+    This function is for the checkbox because JS is stupid
+*/
 function checkbox() {
     if (checkBoxClicked) {
         checkBoxClicked = false;
@@ -34,12 +40,11 @@ function checkbox() {
     }
 }
 
+/*
+    This sets up the table for the survivor portraits
+*/
 function runSRand() {
     var htmlString = "<h3 class='tableHead'>Survivors</h3>";
-    
-    
-   // finish setting up form here
-
     htmlString +="<input id='checker' type='checkbox' onclick='checkbox()' id='uniqueBox name='uniqueBox' /><label for='uniqueBox'>" + 
         "Click here to remove common perks from the pool</label>";
     htmlString += "<br /><br /><input type='submit' id='submit' name='submit' onclick='submittedSurv()' /><label for='submit'>" +
@@ -70,6 +75,9 @@ function runSRand() {
     document.getElementById("mainBody").style.height = "1600px";
 }
 
+/*
+    This function is called when a survivor portrait is clicked, sets to green or red and true or false based upon previous state
+*/
 function portraitClickedSurv(id) {
     if (document.getElementById(id).style.borderColor === "rgb(255, 0, 0)") {
         document.getElementById(id).style.borderColor = "rgb(0, 255, 0)";
@@ -80,6 +88,9 @@ function portraitClickedSurv(id) {
     } 
 }
 
+/*
+    This is called when the submit button is clicked and finds the perks that were selected and removes perks from deselected characters
+*/
 function submittedSurv() {
     perkArray = new Array();
     randomPerks = new Array();
@@ -113,19 +124,25 @@ function submittedSurv() {
     sPerksHTML();
 }
 
+/*
+    This method builds the new HTML elements for displaying the picked perks
+*/
 function sPerksHTML() {
     var htmlString = "<h2 class='perkHead'>Survivor Random Perks!</h2><ol>";
     for (var i = 0; i < 4; i++) {
-        htmlString += "<li class='perkList'>" + randomPerks[i] + "</li>";
+        htmlString += "<li class='perkList'>" + randomPerks[i] + "<img class='randomPerk' src='" + findPerkLink(randomPerks[i]) + "' /></li>";
     }
     htmlString += "</ol><button type='button' onclick='runSRand()' id='returnPerks' name='returnPerks'>";
     htmlString += "Click to return</button>";
     //htmlString += "<label for='returnPerks'>Click to return</label>";
     document.getElementById("mainBody").innerHTML = htmlString;
     document.getElementById("mainBody").style.width = "900px";
-    document.getElementById("mainBody").style.height = "900px";
+    document.getElementById("mainBody").style.height = "700px";
 }
 
+/*
+    This sets up the table for the killer portraits
+*/
 function runKRand() {
     var htmlString = "<h3 class='tableHead'>Killers</h3>";
     
@@ -142,7 +159,7 @@ function runKRand() {
     htmlString += "<p id='tableHead'>Click the portrait to deselect and remove that killer's perks from the pool</p>";
     for (var i = 0; i < allKills.length; i++) {
         var temp = allKills[i];
-        selectedSurvs.set(allKills[i].name_tag, true);
+        selectedKills.set(allKills[i].name_tag, true);
         if (i % 5 === 0) {
             if (i > 0) {
                 htmlString += "</tr>";
@@ -162,6 +179,9 @@ function runKRand() {
     document.getElementById("mainBody").style.height = "1600px";
 }
 
+/*
+    This function is called when a killer portrait is clicked, sets to green or red and true or false based upon previous state
+*/
 function portraitClickedKill(id) {
     if (document.getElementById(id).style.borderColor === "rgb(255, 0, 0)") {
         document.getElementById(id).style.borderColor = "rgb(0, 255, 0)";
@@ -172,6 +192,9 @@ function portraitClickedKill(id) {
     } 
 }
 
+/*
+    This is called when the submit button is clicked and finds the perks that were selected and removes perks from deselected characters
+*/
 function submittedKill() {
     perkArray = new Array();
     randomPerks = new Array();
@@ -206,15 +229,18 @@ function submittedKill() {
     kPerksHTML();
 }
 
+/*
+    This method builds the new HTML elements for displaying the picked perks
+*/
 function kPerksHTML() {
     var htmlString = "<h2 class='perkHead'>Killer Random Perks!</h2><ol>";
     for (var i = 0; i < 4; i++) {
-        htmlString += "<li class='perkList'>" + randomPerks[i] + "</li>";
+        htmlString += "<li class='perkList'>" + randomPerks[i] + "<img class='randomPerk' src='" + findPerkLink(randomPerks[i]) + "'</li>";
     }
     htmlString += "</ol><button type='button' onclick='runKRand()' id='returnPerks' name='returnPerks'>";
     htmlString += "Click to return</button>";
     //htmlString += "<label for='returnPerks'>Click to return</label>";
     document.getElementById("mainBody").innerHTML = htmlString;
     document.getElementById("mainBody").style.width = "900px";
-    document.getElementById("mainBody").style.height = "900px";
+    document.getElementById("mainBody").style.height = "700px";
 }

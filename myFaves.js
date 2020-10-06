@@ -61,7 +61,7 @@ function runFaves() {
     
     
     document.getElementById("mainBody").innerHTML = htmlString;
-    document.getElementById("mainBody").style.height = "1900px";
+    document.getElementById("mainBody").style.height = "2300px";
     document.getElementById("mainBody").style.width = "1200px";
 }
 
