@@ -3,8 +3,8 @@
 window.onload = init;
 var survString;
 var killString;
-var survPics = new Map();
-var killPics = new Map();
+var survTags = new Array();
+var killTags = new Array();
 
 function init() {
 }
@@ -38,9 +38,9 @@ function createSurvTable() {
             var temp = allSurvs[i].perks[j];
             var perkImage = findPerkLink(temp);
             htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
-            survPics.set(temp, perkImage);
         }
         htmlString += "</table></td>";
+        survTags.push(allSurvs[i]);
     }
     
     htmlString += "</table>";
@@ -62,9 +62,9 @@ function createKillTable() {
             var temp = allKills[i].perks[j];
             var perkImage = findPerkLink(temp);
             htmlString += "<tr class='perkRow'><td class='perkName'><img id='perkImage' src='" + perkImage + "' />" + temp + "</td></tr>";
-            killPics.set(temp, perkImage);
         }
         htmlString += "</table></td>";
+        killTags.push(allKills[i]);
     }
     
     htmlString += "</table>";

@@ -54,6 +54,7 @@ header nav ul li a {
  .myStuff {
      text-align: right;
      color: rgb(138, 3, 3);
+     font-size: 1.5em;
  }
 
  #mainBody {
@@ -142,7 +143,7 @@ tr.perkRow {
  p {
      color: rgb(255, 112, 52);
      text-align: center;
-     font-size: 1.5em;
+     font-size: 2.5em;
  }
 
  .portraits {
@@ -156,4 +157,42 @@ tr.perkRow {
  
 aside {
     color: rgb(255, 112, 52);
+}
+
+label {
+    color: rgb(255, 112, 52);
+    font-size: 1.25em;
+}
+
+#mainLogo {
+    width: auto;
+    height: 75px;
+}
+
+input {
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+#tableHead {
+    font-size: 1.5em;
+}
+
+#returnPerks {
+    width: 100px;
+    height: 80px;
+    height: auto;
+    align-self: center;
+}
+
+.perkList {
+    color: rgb(255, 112, 52);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#checker {
+    width: 18px;
+    height: 18px;
 }

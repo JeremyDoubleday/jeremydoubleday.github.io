@@ -1,33 +1,11 @@
-STEP 1 - Major Project Design
-Previously you completed the Major Project Design. You may decide to make some changes to this design. 
-However, you should not change your topic at this point in the course.
-
-STEP 2 - Major Project Requirements:
-For the Major Project you should create at least six web pages and a style sheet.
-
-Every page will have:
-
-a title with your first name, last name, and section number (the title may include additional text)
-a background image or background color that does not interfere with the reading of the text on the page
-a footer with your first name, last name, and section number.
-The first page will have:
 
 an image that has a link to ASU's home page
-at least one large heading and several smaller headings
-jump links to the top, bottom and any major sections of the page
-a favicon
-Spread out as you decide throughout the pages you should have:
 
-At least six appropriate images
-Several large headings and several smaller headings
-Appropriate use of text effects (bold, italics, underlined)
-Appropriate use of fonts (face and color)
+
 Three lists - an ordered list, an unordered list and a definition list
-Use rounded corners on at least one item
-At least one table that has multiple rows and columns
-Use at least one drop case and at least one text shadow
-Links to other web pages that relate to your topic
+
 Site any sources that you have used for information or images
+
 One of your pages will be a form with at least five input controls (at least three different types of controls).
 
 STEP 3 - Testing
