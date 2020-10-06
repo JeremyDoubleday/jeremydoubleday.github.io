@@ -32,9 +32,9 @@ function runFaves() {
     
     for (var i = 0; i < neaPerks.length; i++) {
         var temp = neaPerks[i];
-        htmlString += "<img class='perkImage' src='" + temp.icon + "' />";
+        htmlString += "<img class='favePerkImage' src='" + temp.icon + "' />";
         htmlString += "<span class='faveSpan'>" + temp.perk_name + "<br /></span>";
-        htmlString += "<p class='faveText'>" + temp.description + "</p>";
+        htmlString += "<p class='faveText'>" + temp.description + "</p><hr />";
     }
     htmlString += "</p>";
 
@@ -48,15 +48,16 @@ function runFaves() {
     
     for (var i = 0; i < deathPerks.length; i++) {
         var temp = deathPerks[i];
-        htmlString += "<img class='perkImage' src='" + temp.icon + "' />";
+        htmlString += "<img class='favePerkImage' src='" + temp.icon + "' />";
         htmlString += "<span class='faveSpan'>" + temp.perk_name + "<br /></span>";
-        htmlString += "<p class='faveText'>" + temp.description + "</p>";
+        htmlString += "<p class='faveText'>" + temp.description + "</p><hr />";
     }
     htmlString += "</p>";
     
     
     document.getElementById("mainBody").innerHTML = htmlString;
-    document.getElementById("mainBody").style.height = "2600px";
+    document.getElementById("mainBody").style.height = "1900px";
+    document.getElementById("mainBody").style.width = "1200px";
 }
 
 var deathslinger = {

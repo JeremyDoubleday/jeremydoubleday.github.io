@@ -220,6 +220,12 @@ input {
     float: left;
 }
 
+.favePerkImage {
+    float: left;
+    width: 40px;
+    height: auto;
+}
+
 .faveHeading {
     color: rgb(255, 112, 52);
     text-align: center;
